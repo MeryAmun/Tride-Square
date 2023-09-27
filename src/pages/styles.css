@@ -209,25 +209,25 @@ font-weight: 700;
 background-image: url("../assets//brick.png");
 width: 400px;
 height: 257px;
-margin: 10px;
+margin: 20px;
 }
 .block_work{
 background-image: url("../assets/wall.png");
 width: 400px;
 height: 257px;
-margin: 10px;
+margin: 20px;
 }
 .stone__work{
 background-image: url("../assets/stone.png");
 width: 400px;
 height: 257px;
-margin: 10px;
+margin: 20px;
 }
 .discussion{
 background: #1D7BFA; 
 width: 400px;
 height: 257px;
-margin: 10px;
+margin: 20px;
 padding: 15px 20px;
 display: flex;
 flex-direction: column;
@@ -275,3 +275,99 @@ font-weight: 700;
     font-size: 15px;
     font-weight: 700; 
 }
+
+/* =================================WORK WITH US============================================ */
+.work__with_us {
+    /* background-color: rgba(29, 123, 250, 0.76); */
+    background-image: url("../assets/building.png");
+    background-size: cover;
+}
+
+.work__main{
+    background-color: rgba(29, 123, 250, 0.76);  
+    padding: 0 10px;
+}
+.main__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-top: 100px;
+    
+}
+.main__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    
+    
+}
+.main__leftHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+.main__headerOne{
+color: #FFFEFE;
+font-family: Plus Jakarta Sans;
+font-size: 30px;
+font-weight: 700;
+}
+.main__headerTwo{
+color: #FFFEFE;
+font-family: Plus Jakarta Sans;
+font-size: 27px;
+font-weight: 700;
+}
+.main__leftParagraph{
+color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-weight: 200;
+align-self: flex-start;
+}
+.main__leftbtn{
+    border-radius: 13px;
+border: 2.5px solid #FFF;
+color: #FFF;
+font-family: Playfair Display;
+font-size: 24px;
+font-weight: 500;
+padding: 0 10px;
+align-self: flex-start;
+}
+/* .main__right{
+} */
+.main__rightImage{
+    height: 250px;
+    max-width: 532px;
+}
+.main__rightImage img{
+    height: 100%;
+    width: 100%;
+}
+.work__clients{
+
+}
+.work__clientText{
+   color: #000;
+font-family: Plus Jakarta Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+.work__client{
+width: 153px;
+height: 169px;
+margin: 20px;
+}
+.work__client img{
+    width: 153px;
+    height: 169px;
+object-fit: contain;
+}
+
+/* =================================CONTACT US ======================================================== */
