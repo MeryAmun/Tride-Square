@@ -198,3 +198,80 @@ font-weight: 700;
     padding: 5px 13px;
     border-radius: 7px;
 }
+
+/* =============================SERVICES======================================================== */
+
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.brickwork{
+background-image: url("../assets//brick.png");
+width: 400px;
+height: 257px;
+margin: 10px;
+}
+.block_work{
+background-image: url("../assets/wall.png");
+width: 400px;
+height: 257px;
+margin: 10px;
+}
+.stone__work{
+background-image: url("../assets/stone.png");
+width: 400px;
+height: 257px;
+margin: 10px;
+}
+.discussion{
+background: #1D7BFA; 
+width: 400px;
+height: 257px;
+margin: 10px;
+padding: 15px 20px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.brick__textContainer{
+    padding: 0 20px;
+width: 234px;
+height: 257px;
+flex-shrink: 0;
+background: rgba(29, 123, 250, 0.75); 
+}
+.brick__header{
+color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 32px;
+font-weight: 700;
+}
+.brick__text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.brick__btn{
+background-color: transparent;
+border: none;
+outline: none;
+color: #FFF;
+font-family: Playfair Display;
+font-size: 15px;
+font-weight: 700;
+}
+.discussion__btn{
+    align-self: flex-end;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 3px 25px;
+    color: #FFF;
+    border-radius: 7px;
+    font-family: Playfair Display;
+    font-size: 15px;
+    font-weight: 700; 
+}
