@@ -12,7 +12,7 @@ function App() {
     setCurrentLocation(getCurrentLocation(location.pathname))
     }, [location.pathname])
   return (
-    <div className="App">
+    <div className="app">
       <LandingPage current={currentLocation}/>
     </div>
   );

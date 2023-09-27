@@ -2,7 +2,6 @@
 
 /* ==========================LANDING PAGE============================ */
 
-.sidebar{}
 .sidebar__head{
     width: 341px;
     height: 282px;
@@ -26,7 +25,7 @@ border:none;
 text-decoration: none;
 color: #000;
 font-family: Plus Jakarta Sans;
-font-size: 20px;
+font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -47,5 +46,52 @@ margin: 10px 0;
 }
 
 .main__section{
+    border: 2px solid yellowgreen;
+}
 
+/* ===================================HOME PAGE ====================================== */
+
+.home{
+    height: 100vh;
+    background-image: url("../assets/landing.png");
+    background-size: cover;
+}
+.home__header{
+/* color: #FFF0F0; */
+color: rgba(255, 240, 240, 1);
+font-family: Plus Jakarta Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.home__header-text{
+color: #FFF0F0;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 100;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.home__header-btn{
+    border: 2.5px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 5px 13px;
+    border-radius: 13px;
+    background-color: transparent;
+    font-family: Playfair Display;
+font-size: 15px;
+font-weight: 300;
+}
+.home__footer-text{
+    align-self: flex-end;
+    color: #FFF;
+font-family: Helvetica Neue;
+font-size: 9px;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+padding: 0 10px;
 }

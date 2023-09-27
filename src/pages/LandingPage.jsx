@@ -85,17 +85,25 @@ const LandingPage = ({ current }) => {
         </div>
         <div className="sidebar__footer w-100  d-flex flex-column justify-content-between align-items-center">
           <div className="sidebar__footer-links  d-flex justify-content-between align-items-center my-2">
+          <Link to="/facebook" className="">
             <FaFacebook size={20} color="#000" className="mx-2" />
+            </Link>
+            <Link to="/twitter" className="">
             <FaTwitter size={20} color="#000" className="mx-2" />
+            </Link>
+            <Link to="/tiktok" className="">
             <FaTiktok size={20} color="#000" className="mx-2" />
+            </Link>
+            <Link to="/linkedin" className="">
             <FaLinkedin size={20} color="#000" className="mx-2" />
+            </Link>
           </div>
           <p className="copyright">
             Tride & Square LTD, 2023, All Rights Reserved
           </p>
         </div>
       </div>
-      <div className="main__section w-100 h-100 d-flex justify-content-between align-items-center border border-2 border-info m-0">
+      <div className="main__section w-100 d-flex justify-content-between align-items-center">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
