@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTiktok, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { BsQuote } from "react-icons/bs";
 import { sideHeader } from "../assets/index";
 import "./styles.css";
 import { Routes, Route } from "react-router-dom";
@@ -13,7 +12,7 @@ const LandingPage = ({ current }) => {
     <div className="w-100 d-flex justify-content-between align-items-start">
       <div className="sidebar  d-flex flex-column justify-content-center align-items-center">
         <div className="sidebar__head">
-          <img src={sideHeader} alt="" width="100%" height="100%" />
+          <img src={sideHeader} alt="" />
         </div>
         <div className="sidebar__body d-flex flex-column justify-content-center align-items-center">
           <Link to="/" className="sidebar__link">
