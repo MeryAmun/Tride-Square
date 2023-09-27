@@ -1,13 +1,19 @@
+import React, { useState,useEffect } from 'react'
 import './App.css';
-import {  Routes , Route } from "react-router-dom"
 import {  LandingPage } from './pages';
+import { useLocation } from "react-router-dom";
+import { getCurrentLocation } from './utils/utils'
 
 function App() {
+  const location = useLocation()
+  const [currentLocation, setCurrentLocation] = useState();
+
+  useEffect(() => {
+    setCurrentLocation(getCurrentLocation(location.pathname))
+    }, [location.pathname])
   return (
     <div className="App">
-      <Routes>
-        <Route exact path='/' element={<LandingPage/>}/>
-      </Routes>
+      <LandingPage current={currentLocation}/>
     </div>
   );
 }
