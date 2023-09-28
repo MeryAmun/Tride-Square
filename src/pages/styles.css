@@ -348,8 +348,14 @@ align-self: flex-start;
     height: 100%;
     width: 100%;
 }
-.work__clients{
-
+.work__clientsSection{
+ background-color: rgba(217, 217, 217, 0.37);
+}
+.work__clientsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .work__clientText{
    color: #000;
@@ -360,14 +366,75 @@ font-weight: 700;
 line-height: normal; 
 }
 .work__client{
-width: 153px;
-height: 169px;
+width: 103px;
+height: 109px;
 margin: 20px;
+cursor: pointer;
 }
 .work__client img{
-    width: 153px;
-    height: 169px;
+    width: 103px;
+    height: 109px;
 object-fit: contain;
 }
 
 /* =================================CONTACT US ======================================================== */
+form{
+
+}
+.form__label{
+    font-family: Plus Jakarta Sans;
+font-size: 13px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+/* font-family: Helvetica;
+font-size: 16px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left; */
+
+}
+
+.text__input{
+background: rgba(217, 217, 217, 0.4);
+padding: 5px 0px;
+width: 100%;
+border-radius: 5px;
+outline: none;
+border: none;
+ 
+}
+.textarea__input{
+background: rgba(217, 217, 217, 0.4);
+padding: 5px 0px;
+width: 100%;
+border-radius: 5px;
+outline: none;
+border: none;
+ 
+}
+.form__btn{
+    outline: none;
+    border: 2.5px solid rgba(0, 0, 0, 1);
+    font-family: Plus Jakarta Sans;
+font-size: 15px;
+font-weight: 700;
+justify-self: center;
+border-radius: 7px;
+padding: 3px 10px;
+
+}
+
+.contact__clientText{
+    color: #000;
+ font-family: Plus Jakarta Sans;
+ font-size: 40px;
+ font-weight: 700; 
+ }
+
+ ::placeholder{
+    margin-left:10px ;
+ }

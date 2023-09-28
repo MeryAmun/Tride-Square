@@ -28,11 +28,17 @@ const WorkWithUs = () => {
       </div>
       </div>
     </div>
-    <div className="d-flex flex-column justify-content-center w-100 align-items-center my-3">
+    <div className=" work__clientsSection d-flex flex-column justify-content-center w-100 align-items-center py-3">
       <div className="work__clients">
         <h2 className="work__clientText">Our Clients</h2>
       </div>
-      <div className="work__clientContainer d-flex justify-content-center w-100 align-items-center my-3">
+      <div className="work__clientsContainer w-100 my-3">
+      <div className="work__client">
+       <img src={client} alt="" />
+      </div>
+      <div className="work__client">
+       <img src={client} alt="" />
+      </div>
       <div className="work__client">
        <img src={client} alt="" />
       </div>
