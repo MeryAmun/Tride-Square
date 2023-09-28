@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTiktok, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTiktok,
+  FaInstagramSquare,
+  FaTwitter,
+} from "react-icons/fa";
 import { sideHeader } from "../assets/index";
 import "./styles.css";
 import { Routes, Route } from "react-router-dom";
@@ -11,7 +16,7 @@ const LandingPage = ({ current }) => {
   return (
     <div className="w-100 d-flex justify-content-between align-items-start">
       <div className="sidebar  d-flex flex-column justify-content-center align-items-center">
-        <div className="sidebar__head">
+        <div className="sidebar__head d-flex flex-column justify-content-center align-items-center">
           <img src={sideHeader} alt="" />
         </div>
         <div className="sidebar__body d-flex flex-column justify-content-center align-items-center">
@@ -84,17 +89,23 @@ const LandingPage = ({ current }) => {
         </div>
         <div className="sidebar__footer w-100  d-flex flex-column justify-content-between align-items-center">
           <div className="sidebar__footer-links  d-flex justify-content-between align-items-center my-2">
-          <Link to="/facebook" className="">
-            <FaFacebook size={20} color="#000" className="mx-2" />
+            <Link to="/facebook" className="">
+              <FaFacebook size={20} color="#000" className="mx-2" />
             </Link>
-            <Link to="/twitter" className="">
-            <FaTwitter size={20} color="#000" className="mx-2" />
+            <Link
+              to="https://x.com/trideandsquare?s=21&t=yl0EkoCTJ16MwsNAH6z8SA"
+              className=""
+            >
+              <FaTwitter size={20} color="#000" className="mx-2" />
             </Link>
-            <Link to="/tiktok" className="">
-            <FaTiktok size={20} color="#000" className="mx-2" />
+            <Link
+              to="https://www.tiktok.com/@tridesquareconstr?_t=8g47l0mGC4v&_r=1"
+              className=""
+            >
+              <FaTiktok size={20} color="#000" className="mx-2" />
             </Link>
             <Link to="/linkedin" className="">
-            <FaLinkedin size={20} color="#000" className="mx-2" />
+              <FaInstagramSquare size={20} color="#000" className="mx-2" />
             </Link>
           </div>
           <p className="copyright">

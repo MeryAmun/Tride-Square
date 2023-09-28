@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div
-      className="d-flex flex-column justify-content-center w-100 align-items-start"
-      style={{ height: "100%", padding: "0 25px" }}
-    >
+    <div className="services d-flex flex-column justify-content-center w-100 align-items-start">
       <div className="services__header my-2">
         <h1 className="home__main-header">Services</h1>
       </div>
@@ -48,7 +45,9 @@ const Services = () => {
           </div>
         </div>
         <div className="discussion">
-          <h1 className="brick__header pt-3">Want to discuss your project us?</h1>
+          <h1 className="brick__header pt-3">
+            Want to discuss your project us?
+          </h1>
           <p className="brick__text">
             Feel free to drop us an email: info@trideandsqaure.com
             Alternatively,

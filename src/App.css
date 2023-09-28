@@ -1,5 +1,8 @@
 .app{
- height: 100%;
+ height: 100vh;
+ overflow-y: scroll;
+  /* background-color: rgba(217, 217, 217, 0.37); */
+
 }
 
 @keyframes App-logo-spin {
