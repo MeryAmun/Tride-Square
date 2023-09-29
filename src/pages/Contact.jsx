@@ -17,10 +17,9 @@ const Contact = () => {
     mobileNumber: "",
     message: "",
   });
-  const [successMessage, setSuccessMessage] = useState("");
 
   const notify = () => {
-    toast.info(`${successMessage}`, {
+    toast.info("Thanks for contacting Tride and Square! your message has been received :)", {
       position: "bottom-center",
       autoClose: 5000,
       hideProgressBar: true,
@@ -30,7 +29,7 @@ const Contact = () => {
       progress: undefined,
       theme: "colored",
     });
-  };
+  }
   const handleInputChange = (e) => {
     const value = e.target.value;
     setFormData({ ...formData, [e.target.name]: value });
@@ -48,21 +47,18 @@ const Contact = () => {
       .then(
         (result) => {
           if (result.status === 200) {
-            setSuccessMessage(
-              "Thank you for contacting Tride and Square!! your message has been received.:)"
-            );
+           notify()
             setFormData({
               fullName: "",
               email: "",
               mobileNumber: "",
               message: "",
             });
-            notify();
+            
           }
         },
         (error) => {
           console.log(error.text);
-          setSuccessMessage(error.text);
         }
       );
   };
