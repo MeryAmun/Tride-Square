@@ -20,7 +20,7 @@ const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const notify = () => {
-    toast.info(`🦄 ${successMessage}`, {
+    toast.info(`${successMessage}`, {
       position: "bottom-center",
       autoClose: 5000,
       hideProgressBar: true,
