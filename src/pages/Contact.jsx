@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,15 +17,27 @@ const Contact = () => {
     mobileNumber: "",
     message: "",
   });
+  const [successMessage, setSuccessMessage] = useState("");
 
-  // Lewis.Richardson@trideandsquareconstruction.co.uk
-
+  const notify = () => {
+    toast.info(`🦄 ${successMessage}`, {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
   const handleInputChange = (e) => {
     const value = e.target.value;
     setFormData({ ...formData, [e.target.name]: value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(formRef.current);
     emailjs
       .sendForm(
         "service_5jadrxr",
@@ -34,11 +47,22 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result);
-          //window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+          if (result.status === 200) {
+            setSuccessMessage(
+              "Thank you for contacting Tride and Square!! your message has been received.:)"
+            );
+            setFormData({
+              fullName: "",
+              email: "",
+              mobileNumber: "",
+              message: "",
+            });
+            notify();
+          }
         },
         (error) => {
           console.log(error.text);
+          setSuccessMessage(error.text);
         }
       );
   };
@@ -86,8 +110,8 @@ const Contact = () => {
             <input
               type="text"
               className="text__input"
-              name="mobilePhone"
-              value={formData.mobilePhone}
+              name="mobileNumber"
+              value={formData.mobileNumber}
               onChange={handleInputChange}
             />
           </div>
@@ -109,6 +133,18 @@ const Contact = () => {
           <button className="form__btn my-3" type="submit">
             SUBMIT NOW
           </button>
+          <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
         </form>
       </div>
       <div className="w-100 my-4">
@@ -119,7 +155,10 @@ const Contact = () => {
           <h2 className="contact__clientText">Follow us on socials</h2>
         </div>
         <div className="d-flex justify-content-center align-items-center my-3">
-          <Link to="https//:www.facebook.com" className="">
+          <Link
+            to="https://www.facebook.com/profile.php?id=61551543377790"
+            className=""
+          >
             <FaFacebook size={35} color="#000" className="mx-3" />
           </Link>
           <Link
@@ -134,7 +173,10 @@ const Contact = () => {
           >
             <FaTiktok size={35} color="#000" className="mx-3" />
           </Link>
-          <Link to="https//:www.linkedined.com" className="">
+          <Link
+            to="https://instagram.com/trideandsqaureltd?igshid=MzMyNGUyNmU2YQ=="
+            className=""
+          >
             <FaInstagramSquare size={35} color="#000" className="mx-3" />
           </Link>
         </div>

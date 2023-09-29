@@ -12,7 +12,7 @@ import { Routes, Route } from "react-router-dom";
 import { About, Home, WorkWithUs, Contact, Services, Projects } from "./index";
 
 const LandingPage = ({ current }) => {
-  console.log(current);
+
   return (
     <div className="w-100 d-flex justify-content-between align-items-start">
       <div className="sidebar  d-flex flex-column justify-content-center align-items-center">
@@ -89,7 +89,7 @@ const LandingPage = ({ current }) => {
         </div>
         <div className="sidebar__footer w-100  d-flex flex-column justify-content-between align-items-center">
           <div className="sidebar__footer-links  d-flex justify-content-between align-items-center my-2">
-            <Link to="/facebook" className="">
+            <Link to="https://www.facebook.com/profile.php?id=61551543377790" className="">
               <FaFacebook size={20} color="#000" className="mx-2" />
             </Link>
             <Link
@@ -104,7 +104,7 @@ const LandingPage = ({ current }) => {
             >
               <FaTiktok size={20} color="#000" className="mx-2" />
             </Link>
-            <Link to="/linkedin" className="">
+            <Link to="https://instagram.com/trideandsqaureltd?igshid=MzMyNGUyNmU2YQ==" className="">
               <FaInstagramSquare size={20} color="#000" className="mx-2" />
             </Link>
           </div>
