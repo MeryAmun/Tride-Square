@@ -4,8 +4,8 @@
   width: 0px;
   right: -50%;
   height: 70%;
-  top: 27.5%;
-  z-index: 290;
+  top: 31.7%;
+  z-index: 1;
  overflow-x: hidden;
   transition: width 0.5s ease-in-out;
   transition: right 0.5s ease-in-out;
@@ -623,7 +623,8 @@ height: 72.5vh;
     .sidebar__mobileActive{
         width: 340px;
         right: 0%;
-        top: 50%;
+        height: 70%;
+      top: 31.7%;
         z-index: 250;
         transition: width 0.5s ease-in-out;
         transition: right 0.5s ease-in-out;

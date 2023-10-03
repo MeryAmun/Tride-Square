@@ -22,15 +22,15 @@ const LandingPage = () => {
   const changeWidth = () => {
     targetRef.current.style.width = '350px'
     targetRef.current.style.right = '0%'
-    targetRef.current.style.transition = 'width ease 0.31s';
-    targetRef.current.style.transition = 'right ease 0.31s';
+    targetRef.current.style.transition = 'width 0.5s ease-in-out';
+    targetRef.current.style.transition = 'right 0.5s ease-in-out';
 
       }
       const prevWidth = () => {
         targetRef.current.style.width = '0px'
         targetRef.current.style.right = '-50%'
-        targetRef.current.style.transition = 'width ease 0.31s';
-        targetRef.current.style.transition = 'right ease 0.31s';
+        targetRef.current.style.transition = 'width 0.5s ease-in-out';
+        targetRef.current.style.transition = 'right 0.5s ease-in-out';
       
       }
 
