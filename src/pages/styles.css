@@ -526,6 +526,11 @@
     height: 100vh;
     overflow-y: scroll;
     padding-top: 150px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact__text {
@@ -545,7 +550,9 @@
     text-align: left;
 
 }
-
+.contact__header{
+    padding-left: 25px;
+}
 .text__input {
     background: rgba(217, 217, 217, 0.4);
     padding: 5px 10px;
@@ -853,16 +860,20 @@ height: 72.5vh;
 
 
     .contact{
-        height: 75vh;
-        justify-content: space-between;
+        height: 70vh;
+        justify-content: space-around;
         align-items: flex-start;
-        padding-top: 50px;
+        padding-top: 0px;
     }
+    /* .contact__header{
+        border: 2px solid yellowgreen;
+    } */
     .contact__main{
         justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
     }
     .contact__text{
-        
         text-align: center;
     }
     .contact__socials{

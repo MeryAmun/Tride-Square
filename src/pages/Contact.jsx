@@ -63,14 +63,14 @@ const Contact = () => {
       );
   };
   return (
-    <div className="contact d-flex flex-column justify-content-center w-100 align-items-center">
-      <div className="contact__header  w-100 ps-4">
+    <div className="contact">
+      <div className="contact__header  w-100">
         <h2 className="contact__text w-100">CONTACT US</h2>
       </div>
    
         <form
           onSubmit={handleSubmit}
-          className="contact__main d-flex  flex-column justify-content-center w-50 align-items-center"
+          className="contact__main d-flex  flex-column justify-content-center  align-items-center"
           ref={formRef}
         >
           <div className="d-flex  flex-column justify-content-center w-100 align-items-start my-2">
