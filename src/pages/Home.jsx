@@ -8,16 +8,18 @@ const Home = () => {
   return (
     <div className="home d-flex flex-column justify-content-center w-100 align-items-center">
       <div className="home__container w-100 d-flex flex-column justify-content-center w-100 align-items-center">
-        <div className="home__header-container d-flex flex-column justify-content-center align-items-start">
+        <div className="home__header-container">
           <h1 className="home__header">HOME</h1>
           <div className="d-flex justify-content-between align-items-start mt-2">
             <div
-              className="d-flex flex-column justify-content-between align-items-start"
+              className="homeHeader__textContainer"
               style={{ maxWidth: "502px" }}
             >
               <p className="home__header-text">
-                With over 5+ years experience and a team dedicated to bringing
-                the best possible outcomes.
+              Founded in 2023  by Lewis Richardson an mansory and bricklaying expert with a passion for building the best solutions for clients. Tride & Square boast  a team  of experts that are dedicated to delivering the highest quality results for your project. 
+
+                {/* With over 5+ years experience and a team dedicated to bringing
+                the best possible outcomes. */}
               </p>
               <Link
                 to="/about"

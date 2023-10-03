@@ -64,13 +64,13 @@ const Contact = () => {
   };
   return (
     <div className="contact d-flex flex-column justify-content-center w-100 align-items-center">
-      <div className="work__clients d-flex justify-content-start w-100 align-items-center ps-4">
-        <h2 className="work__clientText">CONTACT US</h2>
+      <div className="contact__header  w-100 ps-4">
+        <h2 className="contact__text w-100">CONTACT US</h2>
       </div>
-      <div className="w-50 ">
+   
         <form
           onSubmit={handleSubmit}
-          className="contact__main d-flex  flex-column justify-content-center w-100 align-items-center"
+          className="contact__main d-flex  flex-column justify-content-center w-50 align-items-center"
           ref={formRef}
         >
           <div className="d-flex  flex-column justify-content-center w-100 align-items-start my-2">
@@ -142,8 +142,8 @@ const Contact = () => {
             theme="colored"
           />
         </form>
-      </div>
-      <div className="w-100 my-4">
+      
+      <div className="w-100 my-4 contact__socials">
         <div
           className="d-flex justify-content-start w-100 align-items-center my-3"
           style={{ paddingLeft: "40px" }}

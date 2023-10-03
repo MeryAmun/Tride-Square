@@ -22,8 +22,8 @@ const WorkWithUs = () => {
               </div>
               <p className="main__leftParagraph my-2">
                 Joining our team, is like joining a family. We are a strong
-                force that work together to produce the possible results for our
-                clients
+                force that work together to produce the best possible results for our
+                clients.
               </p>
               <Link
                 to="/about"

@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="services d-flex flex-column justify-content-center w-100 align-items-start">
       <div className="services__header my-2">
-        <h1 className="home__main-header">Services</h1>
+        <h1 className="services__main-header">Services</h1>
       </div>
       <div className="services__container">
         <div className="brickwork">
@@ -49,9 +49,8 @@ const Services = () => {
             Want to discuss your project us?
           </h1>
           <p className="brick__text">
-            Feel free to drop us an email: info@trideandsqaure.com
-            Alternatively,
-            <b /> give us a call on +447500906705
+            Email: lewis.richardson@trideandsquareconstruction.com
+            Alternatively,<b /> Number: 07935275059
           </p>
           <Link
             to="/contact"

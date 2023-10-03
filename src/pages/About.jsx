@@ -4,12 +4,10 @@ import { BsQuote } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="about d-flex flex-column justify-content-between w-100 align-items-center">
+    <div className="about d-flex flex-column justify-content-between w-100 align-items-center p-0" style={{border:"2px solid yellowgreen"}}>
       <div
-        className="about__container p-0"
-        style={{ maxWidth: "814px", marginLeft: "60px" }}
-      >
-        <div className="home__quote d-flex flex-column justify-content-center align-items-center my-4">
+        className="about__container w-100 p-0">
+        <div className="home__quote d-flex flex-column justify-content-center align-items-center mb-4">
       <BsQuote size={50} color="#000" />
       <p className="home__quote-paragraph">
         Our company has been built with a passion for construction and
@@ -21,25 +19,12 @@ const About = () => {
         <span className="quoter__position">Founder/Managing Director</span>
       </div>
     </div>
-        <div className="d-flex justify-content-between align-items-start">
-          <div
-            className="d-flex flex-column justify-content-between align-items-start"
-            style={{ maxWidth: "502px" }}
-          >
-            <p className="about__header-text">
-              Founded in 2023 by Lewis Richardson an mansory and bricklaying
-              expert with a passion for building the best solutions for clients.
-              Tride & Square boast a team of experts that are dedicated to
-              delivering the highest quality results for your project.
-            </p>
-            
-          </div>
-        </div>
+
         <div className="d-flex flex-column justify-content-between w-100 align-items-start my-3">
-          <h1 className="home__main-header">
+          <h1 className="about__main-header">
             Tride & Square Construction Masonry <br /> Contractor LTD
           </h1>
-          <h2 className="home__sub-header">Building your future, together</h2>
+          <h2 className="about__sub-header">Building your future, together</h2>
         </div>
         <div className="m-4 d-flex flex-column justify-content-center align-items-start">
           <p className="home__main-paragraph">
@@ -71,16 +56,13 @@ const About = () => {
             excellence and being at the forefront of our industry.
           </p>
         </div>
-        <Link
+      </div>
+      <Link
           to="/about"
           className="about__header-btn text-decoration-none my-3"
         >
           BOOK A FREE 30 MIN CONSULTATION NOW
         </Link>
-      </div>
-      {/* <p className="home__footer-text">
-    Property of MDRN Group Limited
-      </p> */}
     </div>
   );
 };
