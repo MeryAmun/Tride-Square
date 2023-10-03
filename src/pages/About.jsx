@@ -4,7 +4,7 @@ import { BsQuote } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="about d-flex flex-column justify-content-between w-100 align-items-center p-0" style={{border:"2px solid yellowgreen"}}>
+    <div className="about d-flex flex-column justify-content-between w-100 align-items-center p-0">
       <div
         className="about__container w-100 p-0">
         <div className="home__quote d-flex flex-column justify-content-center align-items-center mb-4">
