@@ -4,7 +4,7 @@
     width: 0px;
     right: -50%;
     height: 83%;
-    top: 17.8%;
+    top: 19.8%;
     z-index: 1;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -726,6 +726,10 @@ height: 100%;
     .sidebar__mobileBody {
         width: 220px;
         height: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
         background: rgba(217, 217, 217, 1);
         padding: 10px 0;
         border:1px solid rgba(217, 217, 217, 1);
@@ -733,13 +737,13 @@ height: 100%;
 
     .sidebar__link {
         text-decoration: none;
-        text-align: center;
+        text-align: left;
         color: #000;
         font-family: Plus Jakarta Sans;
         font-size: 18px;
         font-weight: 500;
-        padding: 5px 0px;
-        margin: 5px 0px;
+        padding: 5px 20px;
+        margin: 10px 0px;
         width: 200px;
         background-color: transparent;
         transition: background-color 0.50s ease-in-out;
@@ -749,7 +753,7 @@ height: 100%;
         padding: 10px 0px;
         width: 100%;
         background: rgba(217, 217, 217, 1);
-        width: 220px;
+       
         border:1px solid rgba(217, 217, 217, 1);
 
     }

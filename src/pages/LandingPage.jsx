@@ -157,7 +157,7 @@ const toggleActive = () => {
         </Routes>
       </div>
       <div className="sidebar__mobile  d-flex flex-column justify-content-center align-items-center" ref={targetRef}>
-        <div className="sidebar__mobileBody d-flex flex-column justify-content-center align-items-center">
+        <div className="sidebar__mobileBody">
           <Link to="/" className="sidebar__link" onClick={toggleActive}>
             Home
           </Link>
