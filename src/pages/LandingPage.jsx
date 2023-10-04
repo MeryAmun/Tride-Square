@@ -225,7 +225,7 @@ const toggleActive = () => {
             Contact
           </Link>
         </div>
-        <div className="sidebar__mobileFooter  d-flex flex-column justify-content-between align-items-center">
+        <div className="sidebar__mobileFooter  d-flex flex-column justify-content-between align-items-start">
           <div className="sidebar__footer-links  d-flex justify-content-between align-items-center mb-3">
             <Link to="https://www.facebook.com/profile.php?id=61551543377790" className="">
               <FaFacebook size={25} color="#000" className="mx-2" />
