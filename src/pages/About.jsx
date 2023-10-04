@@ -7,7 +7,7 @@ const About = () => {
     <div className="about d-flex flex-column justify-content-between w-100 align-items-center p-0">
       <div
         className="about__container w-100 p-0">
-        <div className="about__quote d-flex flex-column justify-content-center align-items-center mb-4">
+        <div className="about__quote d-flex flex-column justify-content-center align-items-center">
       <BsQuote size={50} color="#000" />
       <p className="about__quote-paragraph">
         Our company has been built with a passion for construction and

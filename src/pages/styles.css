@@ -238,7 +238,6 @@
 }
 
 .about__container {
-
     align-self: start;
 }
 
@@ -265,6 +264,7 @@
     padding: 20px 0;
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
     background-color: rgba(217, 217, 217, 0.37);
 }
 
@@ -336,8 +336,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
+.services__header{
+    margin: 10px 0;
+}
 .services__main-header {
     color: #000;
     font-family: Plus Jakarta Sans;
@@ -573,7 +577,7 @@
 .contact {
     height: 100vh;
     overflow-y: scroll;
-    padding-top: 150px;
+   padding-top: 150px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -633,7 +637,7 @@
     justify-self: center;
     border-radius: 7px;
     padding: 5px 15px;
-    background-color: transparent;
+    background-color: #fff;
     transition: background-color 0.50s ease-in-out;
 
 }
@@ -666,13 +670,15 @@
 height: 100%;
 } */
 
-    .home,
-    .about,
-    .contact {
+    .home{
         height: 82.5vh;
         overflow-y: scroll;
 
     }
+
+    .about {
+        height: 100%;
+        }
 
     .landing {
         flex-direction: column;
@@ -791,6 +797,7 @@ height: 100%;
         opacity: 0;
         display: none;
         height: 0;
+        margin: 0;
     }
 
     .about__quote-paragraph {
@@ -879,12 +886,16 @@ height: 100%;
         overflow-x: hidden;
     }
 
+    .services__header{
+        margin: 0;
+    }
     .services__main-header {
         color: #000;
         font-family: Plus Jakarta Sans;
         font-size: 25px;
         font-weight: 700;
         margin-left: 10px;
+        display: none;
     }
 
     .services__container {
@@ -905,6 +916,8 @@ height: 100%;
         width: 100%;
         height: 100%;
         margin: 0px;
+        display: flex;
+        justify-content: flex-end;
     }
 
 
@@ -1026,6 +1039,11 @@ height: 100%;
 
 /* =================CONTACT MEDIA QUERIES ================================ */
 
+.contact {
+    height: 100%;
+    padding-bottom: 20px;  
+
+}
     .contact {
         justify-content: space-around;
         align-items: flex-start;

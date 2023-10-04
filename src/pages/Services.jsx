@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className="services d-flex flex-column justify-content-center w-100 align-items-start w-100">
-      <div className="services__header my-2">
+      <div className="services__header">
         <h1 className="services__main-header">Services</h1>
       </div>
       <div className="services__container">
@@ -50,7 +50,7 @@ const Services = () => {
           </h1>
           <p className="brick__text">
             Email: lewis.richardson@trideandsquareconstruction.com
-            Alternatively,<b /> Number: 07935275059
+            Alternatively,<b /> Tel: 07935275059
           </p>
           <Link
             to="/contact"
