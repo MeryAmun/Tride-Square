@@ -9,9 +9,8 @@ const WorkWithUs = () => {
     <div className="work d-flex flex-column justify-content-center w-100 align-items-center">
       <div
         className="work__with_us d-flex flex-column justify-content-center w-100 align-items-center"
-        style={{ height: "850px" }}
       >
-        <div className="work__main w-100" style={{ height: "100%" }}>
+        <div className="work__main w-100">
           <div className="main__container w-100">
             <div className="main__left">
               <div className="main__leftHeader">
@@ -19,7 +18,7 @@ const WorkWithUs = () => {
                 <div className="main__rightImageMobile">
                 <img src={people} alt="" />
               </div>
-                <h2 className="main__headerTwo my-4">
+                <h2 className="main__headerTwo">
                   Our team is the driving force behind our business.
                 </h2>
               </div>

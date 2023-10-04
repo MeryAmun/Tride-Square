@@ -59,20 +59,20 @@ const About = () => {
       </div>
       <Link
           to="/about"
-          className="about__header-btn text-decoration-none my-3"
+          className="about__header-btn text-decoration-none"
         >
           BOOK A FREE 30 MIN CONSULTATION NOW
         </Link>
-        <div className="about__quote_mobile d-flex flex-column justify-content-center align-items-center">
-      <BsQuote size={50} color="#000" />
-      <p className="about__quote-paragraph">
+        <div className="about__quoteMobile d-flex flex-column justify-content-center align-items-center">
+      <BsQuote size={50} color="#000" className="quote__iconMobile"/>
+      <p className="about__quote-paragraphMobile">
         Our company has been built with a passion for construction and
         masonry. We strive to deliver the best results possible with a real
         care for your projects
       </p>
-      <div className="d-flex flex-column justify-content-between align-items-center">
-        <span className="quoted__by">Lewis Richardson</span>
-        <span className="quoter__position">Founder/Managing Director</span>
+      <div className="quote__footerMobile d-flex flex-column justify-content-between align-items-center">
+        <span className="quoted__by quote__footerText">Lewis Richardson</span>
+        <span className="quoter__position quote__footerText">Founder/Managing Director</span>
       </div>
     </div>
     </div>
