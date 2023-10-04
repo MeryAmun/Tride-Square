@@ -382,6 +382,13 @@
     justify-content: flex-start;
 }
 
+.brick__textContainerBlock {
+    padding: 0 20px;
+    width: 234px;
+    height: 257px;
+    flex-shrink: 0;
+    background: rgba(29, 123, 250, 0.75);
+}
 .brick__textContainer {
     padding: 0 20px;
     width: 234px;
