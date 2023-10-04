@@ -396,6 +396,12 @@
     font-size: 32px;
     font-weight: 700;
 }
+.block__header {
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 700;
+}
 
 .brick__text {
     color: #FFF;
@@ -915,6 +921,7 @@ height: 100%;
         width: 100%;
         height: 100%;
         margin: 0px;
+        justify-content: flex-start;
     }
  
     .block_work{
@@ -923,8 +930,24 @@ height: 100%;
         margin: 0px;
         display: flex;
         justify-content: flex-end;
+        /* border: 2px solid yellowgreen; */
     }
 
+    .block__header {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .brick__textContainerBlock {
+        padding: 0 20px;
+        width: 166.5px;
+        height: 200px;
+        padding: 15px 10px;
+        background: rgba(29, 123, 250, 0.75);
+        justify-self: flex-end;
+
+    }
 
     .discussion {
         padding: 4px 10px;

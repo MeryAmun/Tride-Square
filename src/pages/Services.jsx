@@ -21,8 +21,8 @@ const Services = () => {
           </div>
         </div>
         <div className="block_work">
-          <div className="brick__textContainer d-flex flex-column justify-content-center align-items-start">
-            <h1 className="brick__header">Blockwork</h1>
+          <div className="brick__textContainerBlock d-flex flex-column justify-content-center align-items-start">
+            <h1 className="block__header">Blockwork</h1>
             <p className="brick__text">
               Our core service. Brickwork remains at the heart of everything we
               do.
