@@ -7,9 +7,9 @@ const About = () => {
     <div className="about d-flex flex-column justify-content-between w-100 align-items-center p-0">
       <div
         className="about__container w-100 p-0">
-        <div className="home__quote d-flex flex-column justify-content-center align-items-center mb-4">
+        <div className="about__quote d-flex flex-column justify-content-center align-items-center mb-4">
       <BsQuote size={50} color="#000" />
-      <p className="home__quote-paragraph">
+      <p className="about__quote-paragraph">
         Our company has been built with a passion for construction and
         masonry. We strive to deliver the best results possible with a real
         care for your projects
@@ -63,6 +63,18 @@ const About = () => {
         >
           BOOK A FREE 30 MIN CONSULTATION NOW
         </Link>
+        <div className="about__quote_mobile d-flex flex-column justify-content-center align-items-center">
+      <BsQuote size={50} color="#000" />
+      <p className="about__quote-paragraph">
+        Our company has been built with a passion for construction and
+        masonry. We strive to deliver the best results possible with a real
+        care for your projects
+      </p>
+      <div className="d-flex flex-column justify-content-between align-items-center">
+        <span className="quoted__by">Lewis Richardson</span>
+        <span className="quoter__position">Founder/Managing Director</span>
+      </div>
+    </div>
     </div>
   );
 };

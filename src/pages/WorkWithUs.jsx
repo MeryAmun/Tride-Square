@@ -16,6 +16,9 @@ const WorkWithUs = () => {
             <div className="main__left">
               <div className="main__leftHeader">
                 <h2 className="main__headerOne mb-2">Working with us</h2>
+                <div className="main__rightImageMobile">
+                <img src={people} alt="" />
+              </div>
                 <h2 className="main__headerTwo my-4">
                   Our team is the driving force behind our business.
                 </h2>

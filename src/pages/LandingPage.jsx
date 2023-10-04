@@ -20,7 +20,7 @@ const LandingPage = () => {
 
 
   const changeWidth = () => {
-    targetRef.current.style.width = '350px'
+    targetRef.current.style.width = '220px'
     targetRef.current.style.right = '0%'
     targetRef.current.style.transition = 'width 0.5s ease-in-out';
     targetRef.current.style.transition = 'right 0.5s ease-in-out';
@@ -49,7 +49,7 @@ const toggleActive = () => {
       <div className="sidebar  d-flex flex-column justify-content-center align-items-center">
         <div className="sidebar__head">
           <img src={sideHeader} alt="" />
-    <FaBars size={40} color="#fff" className="sidebar__headIcon" onClick={toggleActive}/>
+    <FaBars size={35} color="#fff" className="sidebar__headIcon" onClick={toggleActive}/>
         </div>
 
         <div className="sidebar__body d-flex flex-column justify-content-center align-items-center">
@@ -158,10 +158,10 @@ const toggleActive = () => {
       </div>
       <div className="sidebar__mobile  d-flex flex-column justify-content-center align-items-center" ref={targetRef}>
         <div className="sidebar__mobileBody d-flex flex-column justify-content-center align-items-center">
-          <Link to="/" className="sidebar__link">
+          <Link to="/" className="sidebar__link" onClick={toggleActive}>
             Home
           </Link>
-          <Link to="/about" className="sidebar__link">
+          <Link to="/about" className="sidebar__link" onClick={toggleActive}>
             About Us
           </Link>
           <Link className="dropdown">
@@ -175,17 +175,17 @@ const toggleActive = () => {
             </button>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/services" className="sidebar__link dropdown-item">
+                <Link to="/services" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   All Services
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="sidebar__link dropdown-item">
+                <Link to="/services" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   Coming Soon
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="sidebar__link dropdown-item">
+                <Link to="/services" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   Reviews
                 </Link>
               </li>
@@ -202,26 +202,26 @@ const toggleActive = () => {
             </button>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/projects" className="sidebar__link dropdown-item">
+                <Link to="/projects" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="sidebar__link dropdown-item">
+                <Link to="/projects" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   Pending Projects
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="sidebar__link dropdown-item">
+                <Link to="/projects" className="sidebar__link dropdown-item" onClick={toggleActive}>
                   Clients
                 </Link>
               </li>
             </ul>
           </Link>
-          <Link to="/work-with-us" className="sidebar__link">
+          <Link to="/work-with-us" className="sidebar__link" onClick={toggleActive}>
             Work With Us
           </Link>
-          <Link to="/contact" className="sidebar__link">
+          <Link to="/contact" className="sidebar__link" onClick={toggleActive}>
             Contact
           </Link>
         </div>

@@ -3,10 +3,11 @@
   position: absolute;
   width: 0px;
   right: -50%;
-  height: 70%;
-  top: 31.7%;
+  height: 83%;
+  top: 17.3%;
   z-index: 1;
  overflow-x: hidden;
+ overflow-y: hidden;
   transition: width 0.5s ease-in-out;
   transition: right 0.5s ease-in-out;
 }
@@ -19,7 +20,7 @@
 }
 
 .sidebar__head {
-    width: 341px;
+    width: 220px;
     height: 282px;
     background: #1D7BFA;
     display: flex;
@@ -39,7 +40,7 @@
     display: none;
 }
 .sidebar__body {
-    width: 341px;
+    width: 220px;
     height: 100%;
     background: rgba(217, 217, 217, 0.58);
     padding: 10px 0;
@@ -256,7 +257,17 @@
     font-weight: 700;
     margin-left: 100px;
 }
+.about__quote {
+    padding: 20px 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(217, 217, 217, 0.37);
+}
+.about__quote-paragraph {
+    width: 414px;
+    text-align: center;
 
+}
 .about__sub-header {
     color: #0D0D0D;
     font-family: Plus Jakarta Sans;
@@ -481,7 +492,10 @@
     height: 250px;
     max-width: 432px;
 }
-
+.main__rightImageMobile {
+    height: 0px;
+    max-width: 0px;
+}
 .main__rightImage img {
     height: 100%;
     width: 100%;
@@ -614,7 +628,9 @@
     .home,
     .about,
     .contact{
-height: 72.5vh;
+height: 82.5vh;
+overflow-y: scroll;
+
     }
     .landing{
       flex-direction: column;
@@ -633,9 +649,11 @@ height: 72.5vh;
       }
     .sidebar {
       width: 100%;
-      height: 100%;
+      height: 120px;
       overflow-y: hidden;
-      background: #1D7BFA;  
+      /* border: 2px solid yellowgreen; */
+     
+       
     }
     .sidebar__head{
         display: flex;
@@ -643,11 +661,12 @@ height: 72.5vh;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-     height: auto;
-      padding: 30px 20px;
+      padding-top: 20px;
+      padding-right: 25px;
+     height:100%;
     }
     .sidebar__head img {
-   width: 200px;
+   width: 125px;
   
   }
     .sidebar__body{
@@ -655,7 +674,7 @@ height: 72.5vh;
        opacity: 0; 
     }
     .sidebar__mobileBody {
-        width: 341px;
+        width: 220px;
         height: 100%;
         background: rgba(217, 217, 217, 1);
         padding: 10px 0;
@@ -665,7 +684,7 @@ height: 72.5vh;
         text-align: center;
         color: #000;
         font-family: Plus Jakarta Sans;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 500;
         padding: 5px 0px;
         margin: 5px 0px;
@@ -677,8 +696,11 @@ height: 72.5vh;
         padding: 10px 0px;
         width: 100%;
         margin-top: -100px;
-        width: 341px;
+        width: 220px;
        
+    }
+    .copyright__mobile{
+        font-size: 10px;
     }
 .sidebar__footer{
     display: none;
@@ -687,7 +709,6 @@ height: 72.5vh;
 }
 
     .sidebar__headIcon{
-        margin-top: 40px;
         display:flex;
     }
 
@@ -697,12 +718,21 @@ height: 72.5vh;
     .about__main-header {
         display: none;
     }
-    
+    .about__quote {
+      opacity: 0;  display: none;
+      height: 0;
+    }
+    .about__quote_mobile {
+        padding: 20px 0;
+        width: 100%;
+        height: 200px;
+        background-color: rgba(217, 217, 217, 0.37);
+    }
     .about__sub-header {
         color: #0D0D0D;
         font-family: Plus Jakarta Sans;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 700;
         padding-left: 30px;
     }
     
@@ -731,7 +761,7 @@ height: 72.5vh;
     .home__header-text {
         color: #FFF0F0;
         font-family: Plus Jakarta Sans;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 100;;
         text-align: left;
         padding: 0 25px;
@@ -814,9 +844,22 @@ height: 72.5vh;
     
     /* .main__right{
     } */
+   
+    
     .main__rightImage {
-        height: 100%px;
+        height: 0px;
+        max-width: 0;
+    }
+    .main__rightImageMobile {
+        height: 100%;
         max-width: 432px;
+        overflow-x: hidden;
+        margin: 15px 0;
+    }
+
+    .main__headerTwo,
+    .main__leftParagraph{
+        padding: 10px;
     }
     
     .main__rightImage img {
@@ -861,10 +904,9 @@ height: 72.5vh;
 
 
     .contact{
-        height: 70vh;
         justify-content: space-around;
         align-items: flex-start;
-        padding-top: 0px;
+        padding-top: 50px;
     }
     /* .contact__header{
         border: 2px solid yellowgreen;
